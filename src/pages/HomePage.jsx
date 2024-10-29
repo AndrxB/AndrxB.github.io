@@ -2,6 +2,8 @@ import React from "react";
 import RedirectButton from '../hooks/RedirectButton'
 import Tag from "../hooks/Tag";
 import SocialMedia from "../hooks/SocialMedia";
+import DropDown from "../components/DropDown";
+import DropDownItem from "../hooks/DropDownItem";
 
 function HomePage(){
     return(
@@ -21,10 +23,10 @@ function HomePage(){
             </div>
 
             <div className="bottom-index-container">
-                <div className="top-down"><RedirectButton attributeClassName="button" targetPage="https://github.com/AndrxB" text="Github Repository"/></div>
-                <div className="top-down"><RedirectButton attributeClassName="button" targetPage="/AboutMePage" text="AboutMe"/></div>
-                <div className="top-down"><RedirectButton attributeClassName="button" targetPage="/CVPage" text="CV"/></div>
-                <div className="top-down"><RedirectButton attributeClassName="button" targetPage="/ProjectsPage" text="Projects"/></div>
+
+                <div className="top-down"><DropDownItem text="Projects" dropDownText="hi"/></div>
+                <div className="top-down"><DropDownItem text="About Me" dropDownText="joe"/></div>
+                <div className="top-down"><DropDownItem text="CV" dropDownText="mama"/></div>
             </div>
         </div>
     )

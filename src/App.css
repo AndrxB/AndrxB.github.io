@@ -15,7 +15,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   margin-inline: 1rem;
   max-width: fit-content;
   margin-left: auto;
@@ -48,4 +48,5 @@
   font-size: x-large;
   border-radius: 5%;
   border-color: gray;
+  width: 40rem;
 }

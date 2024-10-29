@@ -1,29 +1,34 @@
 import React from "react";
+import facebook_logo from "../assets/facebook_icon.png"
+import instagram_logo from "../assets/instagram_icon.png"
+import github_logo from "../assets/github_icon.png"
+import linkedin_logo from "../assets/linkedin_icon.png"
+import x_logo from "../assets/x_icon.png"
 
 function SocialMedia() {
     const medias = [
         {
-            img:"",
+            img:facebook_logo,
             alt:"Facebook",
             URL:"https://www.facebook.com/andre.birk.73/"
         },
         {
-            img:"",
+            img:instagram_logo,
             alt:"Instagram",
             URL:"https://www.instagram.com/andrx_birk/"
         },
         {
-            img:"",
+            img:x_logo,
             alt:"X (formally known as twitter)",
             URL:"https://x.com/blankbrink"
         },
         {
-            img:"",
+            img:github_logo,
             alt:"Github",
             URL:"https://github.com/AndrxB"
         },
         {
-            img:"",
+            img:linkedin_logo,
             alt:"LinkedIn",
             URL:"https://www.linkedin.com/in/andré-birk-09a156273/"
         }
@@ -42,12 +47,11 @@ function SocialMedia() {
                         rel="noopener noreferrer"
                     >
                         <img 
-                            //src={media.img} 
+                            src={media.img} 
                             alt={media.alt} 
-                            width="30" 
-                            height="30" 
+                            width="25" 
+                            height="25" 
                         />
-                        <p>{media.alt}</p>
                     </a>
             ))}
         </>
