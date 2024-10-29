@@ -1,19 +1,22 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 
-function RedirectButton({ targetPage, text, attributeClassName, otherPage }) {
-    const navigate = useNavigate()
+function RedirectButton({ targetPage, text, attributeClassName}) {
+    const navigate = useNavigate();
 
     const handleRedirect = () => {
-        if ( otherPage == undefined ) {
+        if (targetPage.startsWith('http://') || targetPage.startsWith('https://')) {
+            window.location.href = targetPage; 
+        } else {
             navigate(targetPage, { replace: true });
         }
-    }
+    };
 
-    
-        return <button className={attributeClassName} onClick={handleRedirect}>{text} </button>
-
-
+    return (
+        <button className={attributeClassName} onClick={handleRedirect}>
+            {text}
+        </button>
+    );
 }
 
-export default RedirectButton
+export default RedirectButton;

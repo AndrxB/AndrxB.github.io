@@ -7,21 +7,45 @@
 
 .bottom-index-container {
   justify-content: space-between;
-  display: flexbox;
   flex-direction: column;
 }
 
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-inline: 1rem;
+  max-width: fit-content;
+  margin-left: auto;
+  
+}
+
 .top-index-container {
-  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
   background-color: #1a1a1a;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 
 .top-down {
   padding: 10px;
 }
 
+.tag {
+  border-radius: 5%;
+  border-color: gray;
+  padding: 5px;
+  margin-inline: 5px;
+  font-style: italic;
+  font-size: small;
+  display: flexbox;
+}
+
 .button {
-  font-size: xxx-large;
-  border-radius: 10%;
+  font-size: x-large;
+  border-radius: 5%;
+  border-color: gray;
 }
